@@ -16,7 +16,7 @@ window.addEventListener("load", function() {
         aboutUsSection.style.display = "grid";
         productSection.style.display = "inherit";
         loader.style.display = "none";
-    }, 6500); 
+    }, 2000); 
 });
 
 
@@ -29,4 +29,5 @@ addToCartButtons.forEach(button => {
             notificationAlert.style.display = "none";
         }, 3000);
     });
+
 });
