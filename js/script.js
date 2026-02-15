@@ -27,7 +27,8 @@ addToCartButtons.forEach(button => {
         showNotification();
         setTimeout(function() {
             notificationAlert.style.display = "none";
-        }, 3000);
+        }, 6500);
     });
 
 });
+
