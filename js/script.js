@@ -17,7 +17,7 @@ window.addEventListener("load", function() {
         aboutUsSection.style.display = "grid";
         productSection.style.display = "inherit";
         loader.style.display = "none";
-    }, 1500); 
+    }, 6500); 
 
     // if (modalSignup.classList.contains("active") === true) {
         
@@ -62,3 +62,4 @@ closeBtn.forEach(btn => {
         modalSignup.classList.remove("active");
     });
 });
+
