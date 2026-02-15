@@ -4,12 +4,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
     overflow-x: hidden;
-}
-
-.notification-success-alert {
-    display: none;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 #wifi-loader {
@@ -276,16 +271,16 @@ li .nav-link {
     margin-bottom: 25px;
 }
 
-.shop-btn {
+.shop-btn, .login-btn, .signup-btn {
     margin-top: 10px;
     padding: 12px 35px;
     font-size: 1rem;
     font-weight: 500;
-     background-color: #3409f0;
-     color: #ffffff;
-     border: none;
-     border-radius: 14px;
-     cursor: pointer;
+    background-color: #3409f0;
+    color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
     }
 
 .shop-btn a {
@@ -369,4 +364,91 @@ li .nav-link {
     font-size: 2.5rem;
     font-weight: 800;
 
+}
+
+.popup-login-page, .popup-signup-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.295);
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+}
+
+.popup-login-page.active, .popup-signup-page.active {
+    display: flex;
+    z-index: 99;
+    opacity: 1;
+    backdrop-filter: blur(2px);
+}
+
+.popup-content {
+    background-color: #262525ab;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20vh;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.676)
+}
+
+.popup-content input::placeholder {
+    color: #7a7a7a;
+    font-weight: 500;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-btn, .signup-btn{
+  padding: 10px 30%;
+  font-weight: 600;
+}
+
+.login-btn:hover, .signup-btn:hover, .shop-btn:hover {
+    background-color: #3210cdc0;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.require-signup {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+#signupLink, #loginLink {
+    color: #3409f0;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
 }
